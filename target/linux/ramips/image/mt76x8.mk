@@ -121,6 +121,16 @@ define Device/elecom_wrc-1167fs
 endef
 TARGET_DEVICES += elecom_wrc-1167fs
 
+define Device/glinet_gl-mt300n-v0
+  IMAGE_SIZE := 32192k
+  DEVICE_VENDOR := GL.iNet
+  DEVICE_MODEL := GL-MT300N
+  DEVICE_VARIANT := V0
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+  SUPPORTED_DEVICES += gl-mt300n-v0
+endef
+TARGET_DEVICES += glinet_gl-mt300n-v0
+
 define Device/glinet_gl-mt300n-v2
   IMAGE_SIZE := 16064k
   DEVICE_VENDOR := GL.iNet
